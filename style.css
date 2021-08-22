@@ -12,6 +12,10 @@
   background-color: #f6f6f6;
 }
 
+.bookletterFont {
+  font-family: "Goudy Bookletter 1911", serif;
+}
+
 .carousel {
   padding-bottom: 60px;
 }
