@@ -17,7 +17,6 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Vollkorn&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
     <!-- Nav Bar-->
@@ -223,7 +223,7 @@
                   published this year. This fall's theme is historical fiction!
                   <br /><br />
                   Email
-                  <a href="mailto: contact@nookbookstore.com"
+                  <a href="mailto: contact489@nookbookstore.com"
                     >contact@nookbookstore.com</a
                   >
                   for more information!</span
@@ -481,19 +481,23 @@
             </p>
             <p>
               <i class="fas fa-at"></i>
-              <a href="mailto: contact@nookbookstore.com"
+              <a href="mailto: contact489@nookbookstore.com"
                 >contact@nookbookstore.com</a
               >
             </p>
           </div>
           <div class="col-sm-7 contactdescr">
             <p>Contact us and we'll get back to you within 24 hours.</p>
-            <form name="contactform" class="row g-3" action="" method="POST">
+            <form
+              name="contactform"
+              class="row g-3"
+              action="success.html"
+              method="GET"
+            >
               <div class="col-md-6">
                 <input
                   type="text"
                   class="form-control"
-                  id="name"
                   id="name"
                   placeholder="Name"
                   required
@@ -504,7 +508,6 @@
                   type="text"
                   class="form-control"
                   id="email"
-                  name="email"
                   placeholder="Email"
                   required
                 />
@@ -513,7 +516,6 @@
                 <textarea
                   class="form-control"
                   id="message"
-                  name="message"
                   placeholder="Message"
                   rows="3"
                   required
@@ -572,7 +574,7 @@
       </div>
     </footer>
 
-    <!-- Javascript/JQuery -->
+    <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
@@ -606,12 +608,6 @@
               $(this).addClass("slide");
             }
           });
-        });
-
-        $("form[name='contactform']").on("submit", function () {
-          alert(
-            "We've recieved your message! We'll write back as soon as we can 😊."
-          );
         });
       });
     </script>
